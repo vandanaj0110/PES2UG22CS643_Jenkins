@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o output PES2UG22CS643-1 main/hello.cpp'  // Replace YOUR_SRN-1 with your actual file name
+                sh 'g++ -o PES2UG22CS643-1 main/hello.cpp'  // Replace YOUR_SRN-1 with your actual file name
                 echo 'Build Stage Successful'
             }
         }
