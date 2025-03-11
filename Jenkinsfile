@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o output PES2UG22CS643-1.cpp'  // Replace YOUR_SRN-1 with your actual file name
+                sh 'g++ -o output PES2UG22CS643-1 hello.cpp'  // Replace YOUR_SRN-1 with your actual file name
                 echo 'Build Stage Successful'
             }
         }
 
         stage('Test') {
             steps {
-                sh './output'  // Run the compiled C++ program
+                sh './PES2UG22CS643-1'  // Run the compiled C++ program
                 echo 'Test Stage Successful'
             }
         }
