@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh './PES2UG22CS643-1'  // Run the compiled C++ program
+                sh './non_existance_file'  // Run the compiled C++ program
                 echo 'Test Stage Successful'
             }
         }
